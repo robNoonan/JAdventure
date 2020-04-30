@@ -175,16 +175,16 @@ public enum CommandCollection {
     }
 
     // command for teleporting to a specific location.
-    @Command(command="teleport", aliases="t", description="Teleport to a specific coordinate - DEBUG ONLY", debug=false)
-    public void command_t() throws DeathException {
+    @Command(command="teleport", aliases="tele", description="Teleport to a specific coordinate - DEBUG ONLY", debug=false)
+    public void command_t(String argx) throws DeathException {
         ILocation location = player.getLocation();
 
         try {
 
-            
-
             if("test".equals(player.getName())) {
-                 //QueueProvider.offer("Testing for teleporting");
+
+                String locationString = String.format("Testing for teleporting x: %s", argx);
+                QueueProvider.offer(locationString);
                 //  arg = DIRECTION_LINKS.get(arg);
                 //  Direction direction = Direction.valueOf(arg.toUpperCase());
                 //  Map<Direction, ILocation> exits = location.getExits();
