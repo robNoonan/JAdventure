@@ -37,11 +37,12 @@ public class Game {
                   break;
           }
     }
-   
+    
     /**
      * Starts a new game.
      * It prints the introduction text first and asks for the name of the player's
-     * character and welcomes him / her. After that, it goes to the normal game prompt.
+     * character and welcomes him or her and includes a brief description of how to
+     *  move and play the game. After that, it goes to the normal game prompt.
      */
     public void newGameStart(Player player) throws DeathException {
         QueueProvider.offer(player.getIntro());
@@ -50,7 +51,29 @@ public class Game {
         LocationRepository locationRepo = GameBeans.getLocationRepository(player.getName());
         this.player.setLocation(locationRepo.getInitialLocation());
         player.save();
-        QueueProvider.offer("Welcome to Silliya, " + player.getName() + ".");
+        QueueProvider.offer("Welcome to Silliya, " + player.getName() + ". \n \n" 
+        + "*** HOW TO PLAY ***\n \n"
+        + "To move in a direction, type 'g' followed by the first letter of the direction you'd like to go\n"
+        + "* MOVEMENT *\n"
+        + "'g n' - go north\n"
+        + "'g s' - go south\n"
+        + "'g e' - go east\n"
+        + "'g w' - go west\n \n"
+        + "* INVENTORY *\n"
+        + "'v <s,e,b>' - view status, eqipped items, backbpack\n"
+        + "'p <itemname>' - pick up an item\n"
+        + "'d <itemname>' - drop an item\n"
+        + "'e <itemname>' - equip item\n"
+        + "'ue <itemname>' - unequip item\n \n"
+        + "* INTERACTIONS *\n"
+        + "'m' - get a list of monsters around you\n"
+        + "'la' - look around you\n"
+        + "'t <npc>' - to talk to a character\n"
+        + "'a <monster>' - to attack a monster\n \n"
+        + "* GAME *\n"
+        + "'h' - help menu\n"
+        + "'s' - save game\n"
+        + "'exit' - quit current game\n");
         player.getLocation().print();
         gamePrompt(player);
     }
