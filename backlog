@@ -34,7 +34,13 @@
    Task 5B. give certain npc's variables that distinguish them apart from other npc's - points = 8
    Task 5C. have the npc recognises those who have the same org variables - points = 8
 
-
+#6 - Add a Boss Rat to the Rat sewer quest
+   - As a JAdventure player, I want to have a tough challenge when I go through this quest
+   
+   Task 6A. Create a NPC Monster called Boss Rat -3
+   Task 6B. Give the Boss Rat increased stats to present a tough challenge to the player -3
+   Task 6C. Allow the Boss Rat to spawn in a specific location in the sewer -5
+   
 ------COMPLETED------
 
 #0 - Have the instructions of how to play the game stated at the beginning of the game. 
