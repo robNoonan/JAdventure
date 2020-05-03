@@ -33,13 +33,6 @@
    Task 5A. Understand how to generate an npc within the game world. - points = 13
    Task 5B. give certain npc's variables that distinguish them apart from other npc's - points = 8
    Task 5C. have the npc recognises those who have the same org variables - points = 8
-
-#6 - Add a Boss Rat to the Rat sewer quest
-   - As a JAdventure player, I want to have a tough challenge when I go through this quest
-   
-   Task 6A. Create a NPC Monster called Boss Rat -3
-   Task 6B. Give the Boss Rat increased stats to present a tough challenge to the player -3
-   Task 6C. Allow the Boss Rat to spawn in a specific location in the sewer -5
    
 ------COMPLETED------
 
@@ -49,3 +42,10 @@
    Task 0A. Identifiying how commands are accepted into the interface - points = 5 
    Task 0B. Create a 'help' command that then spits out a list of commands that are needed to play the game. - points = 1
    Task 0C. Integrate this command into the beginning of the game so that a new player knows how to access it. - points = 2
+   
+#6 - Add a Boss Rat to the Rat sewer quest
+   - As a JAdventure player, I want to have a tough challenge when I go through this quest
+   
+   Task 6A. Create a NPC Monster called Boss Rat -3
+   Task 6B. Give the Boss Rat increased stats to present a tough challenge to the player -3
+   Task 6C. Allow the Boss Rat to spawn in a specific location in the sewer -5
