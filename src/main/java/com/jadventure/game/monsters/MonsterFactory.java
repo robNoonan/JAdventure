@@ -65,9 +65,11 @@ public class MonsterFactory {
         if (randomInt == 0)
             return new Troll(playerLevel);
         else if (randomInt == 1)
-            return new Skeleton(playerLevel);
-        else
             return new Goblin(playerLevel);
+        else if (randomInt == 2)
+            return new BossRat(playerLevel);
+        else
+            return new Skeleton(playerLevel);
     }
 
     private Monster getPlainsMonster(int playerLevel) {
