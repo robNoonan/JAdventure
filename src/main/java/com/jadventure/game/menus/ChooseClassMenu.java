@@ -6,7 +6,10 @@ import com.jadventure.game.Game;
 import com.jadventure.game.QueueProvider;
 
 /**
- * Called when creating a new Player
+ * This is a class file for player creation at the beginning of the game
+ * 
+ * It allows the player to choose what kind of game they would like to play
+ * Be it recruit or sewer rat
  */
 public class ChooseClassMenu extends Menus {
 

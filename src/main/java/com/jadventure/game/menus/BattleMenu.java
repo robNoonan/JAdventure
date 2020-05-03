@@ -15,6 +15,12 @@ import java.util.Random;
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ * This is a class file for combat
+ * 
+ * It contains methods for handeling combat between the player and NPC opponent
+ * methods for handeling escape attempts, combat variable changes etc.
+ */
 public class BattleMenu extends Menus {
 
     private NPC opponent;
@@ -57,9 +63,9 @@ public class BattleMenu extends Menus {
             int newLevel = (int) (0.075 * Math.sqrt(this.player.getXP()) + 1);
             this.player.setLevel(newLevel);
 
-            // Iterates over the opponent's items and if there are any, drops them.
-            // There are two loops due to a ConcurrentModification Exception that occurs
-            // if you try to remove the item while looping through the npc's items.
+            /// Iterates over the opponent's items and if there are any, drops them.
+            /// There are two loops due to a ConcurrentModification Exception that occurs
+            /// if you try to remove the item while looping through the npc's items.
             List<ItemStack> itemStacks = opponent.getStorage().getItemStack();
             List<String> itemIds = new ArrayList<>();
             for (ItemStack itemStack : itemStacks) {

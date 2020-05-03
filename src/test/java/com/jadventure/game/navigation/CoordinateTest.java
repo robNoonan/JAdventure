@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * This class map coordinate code testing at the execution of 'mvn test'
+ */
 public class CoordinateTest {
 
     @Test

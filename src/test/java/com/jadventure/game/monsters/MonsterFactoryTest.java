@@ -13,6 +13,9 @@ import com.jadventure.game.navigation.ILocation;
 import com.jadventure.game.navigation.Location;
 import com.jadventure.game.navigation.LocationType;
 
+/**
+ * This class handles NPC monster generation code testing at the execution of 'mvn test'
+ */
 public class MonsterFactoryTest {
     private Player player;
     private Location location;

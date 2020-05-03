@@ -21,6 +21,10 @@ import com.google.gson.stream.JsonWriter;
 import com.jadventure.game.entities.EquipmentLocation;
 import com.jadventure.game.items.Item;
 
+/**
+ * This class loads the items from the jsonReader file on start.
+ * It also provides methods for adding items and choosing a random item.
+ */
 public class ItemRepository {
     private static final Map<String, EquipmentLocation> EQUIPMENT_POSITION_MAP = new HashMap<>();
     private Map<String, Item> itemMap = new HashMap<>();

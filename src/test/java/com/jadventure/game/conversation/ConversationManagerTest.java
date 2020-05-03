@@ -15,6 +15,9 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+/**
+ * This class handles Converstaion code testing at the execution of 'mvn test'
+ */
 public class ConversationManagerTest {
     ConversationManager cm;
 

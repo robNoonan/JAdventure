@@ -12,6 +12,10 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.jadventure.game.entities.Player;
 
+/**
+ * This class loads information for the character that the player would like to change too
+ * It also executes a test to make sure the change was executed 
+ */
 public class CharacterChange {
     public void trigger(Player player, String triggerType, String keyword) {
         JsonParser parser = new JsonParser();

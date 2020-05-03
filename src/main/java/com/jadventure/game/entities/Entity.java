@@ -15,16 +15,17 @@ import com.jadventure.game.repository.ItemRepository;
  * superclass for all entities (includes player, monsters...)
  */
 public abstract class Entity {
-    // @Resource
+    /// @Resource
     protected ItemRepository itemRepo = GameBeans.getItemRepository();
     
-    // All entities can attack, have health, have names
+    /// All entities can attack, have health, have names
     private int healthMax;
     private int health;
     private String name;
     private String intro;
     private int level;
-    // Statistics
+    
+    /// Statistics
     private int strength;
     private int intelligence;
     private int dexterity;

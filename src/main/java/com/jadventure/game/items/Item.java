@@ -9,6 +9,8 @@ import com.jadventure.game.entities.EquipmentLocation;
 
 /**
  * Items lay around in the game world and can be taken with you.
+ * 
+ * This is a class file for all items that a player can pick up in the world
  */
 public class Item {
 	private final String id;

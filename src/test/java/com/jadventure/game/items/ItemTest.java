@@ -10,6 +10,9 @@ import java.util.TreeMap;
 
 import org.junit.Test;
 
+/**
+ * This class handles Item code testing at the execution of 'mvn test'
+ */
 public class ItemTest {
 
 	@Test

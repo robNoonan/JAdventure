@@ -61,6 +61,7 @@ public class ConversationManager {
         return instance;
     }
 
+    /// Method for starting converstaions
     private void load() {
         String fileName = "json/original_data/npcs.json";
         JsonParser parser = new JsonParser();
@@ -82,6 +83,7 @@ public class ConversationManager {
         }
     }
 
+    /// Initializes a new conversation between an NPC and the player
     private void addConversation(NPC npc, JsonArray conversation) {
         List<Line> start = new ArrayList<>();
         int i = 0;
@@ -92,6 +94,7 @@ public class ConversationManager {
         lines.put(npc, start);
     }
 
+    /// Method for receiving text responces from the player
     private Line getLine(int index, JsonArray conversation) {
         JsonObject line = conversation.get(index).getAsJsonObject();
         List<Integer> responses = new ArrayList<>();
@@ -144,6 +147,7 @@ public class ConversationManager {
         }
     }
 
+    
     private void triggerAction(Line line, NPC npc, Player player) throws DeathException {
         switch (line.getAction()) {
             case ATTACK:

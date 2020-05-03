@@ -12,6 +12,9 @@ import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * This class handles Player code testing at the execution of 'mvn test'
+ */
 public class PlayerTest {
 
     @Test

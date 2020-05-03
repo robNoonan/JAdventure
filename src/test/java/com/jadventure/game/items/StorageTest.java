@@ -9,6 +9,9 @@ import java.util.Map;
 
 import org.junit.Test;
 
+/**
+ * This class handles Item Storage code testing at the execution of 'mvn test'
+ */
 public class StorageTest {
 
 	@Test

@@ -11,6 +11,9 @@ import javax.naming.spi.ObjectFactoryBuilder;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * This class handles NPC monster generation and monster identification code testing at the execution of 'mvn test'
+ */
 public class MonsterTest {
 
     private Monster dummyMonster;
@@ -54,6 +57,9 @@ public class MonsterTest {
 
         Bugbear bugbear = new Bugbear(playerLevel);
         assertEquals("Bugbear", bugbear.monsterType);
+
+        BossRat bossrat = new BossRat(playerLevel);
+        assertEquals("BossRat", bossrat.monsterType);
 
         Giant giant = new Giant(playerLevel);
         assertEquals("Giant", giant.monsterType);

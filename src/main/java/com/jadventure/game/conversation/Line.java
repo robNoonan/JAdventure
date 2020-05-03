@@ -9,6 +9,8 @@ import com.jadventure.game.menus.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 
+/// Class file for NPC conversations
+/// it contains the text for responces and condition methods for discerning context of a certain conversation
 public class Line {
     private int id;
     private String playerPrompt;

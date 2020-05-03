@@ -172,7 +172,7 @@ public class Player extends Entity {
         return player;
     }
 
-    // This is known as the singleton pattern. It allows for only 1 instance of a player.
+    /// This is known as the singleton pattern. It allows for only 1 instance of a player.
     private static Player player;
     
     public static Player getInstance(String playerClass){

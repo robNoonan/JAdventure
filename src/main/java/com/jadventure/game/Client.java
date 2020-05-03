@@ -4,6 +4,11 @@ import java.net.*;
 import java.io.*;
 import java.util.Scanner;
 
+/**
+ * This class loads the game client to the server
+ * it constantly checks for input from the server side
+ * it also handles user input from the client to the server
+ */
 public class Client {
 
     DataInputStream in;

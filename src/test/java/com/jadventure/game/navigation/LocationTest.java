@@ -7,6 +7,9 @@ import org.junit.Test;
 import com.jadventure.game.items.Item;
 import com.jadventure.game.entities.NPC;
 
+/**
+ * This class handles location attribute code testing at the execution of 'mvn test'
+ */
 public class LocationTest {
 
 	@Test

@@ -13,6 +13,10 @@ import com.jadventure.game.menus.MenuItem;
 import com.jadventure.game.menus.Menus;
 import com.jadventure.game.repository.ItemRepository;
 
+/**
+ * This class handles trading interactions between NPC traders and the player
+ * It contains methods for the player to buy an NPC items or to sell an item to an NPC from their own inventory
+ */
 public class Trading {
     NPC npc;
     Player player;

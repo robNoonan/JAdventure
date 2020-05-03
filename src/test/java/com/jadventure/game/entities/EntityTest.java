@@ -17,6 +17,9 @@ import com.jadventure.game.items.Item;
 import com.jadventure.game.items.Storage;
 import com.jadventure.game.repository.ItemRepository;
 
+/**
+ * This class handles NPC/entity code testing at the execution of 'mvn test'
+ */
 public class EntityTest {
     private Entity entity;
 
