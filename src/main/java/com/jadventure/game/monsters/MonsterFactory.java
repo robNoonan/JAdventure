@@ -62,14 +62,14 @@ public class MonsterFactory {
 
     private Monster getCaveMonster(int playerLevel) {
     	int randomInt = random.nextInt(4);
-        if (randomInt <= 1)
-            return new Skeleton(playerLevel);
-        else if (randomInt == 2)
+        if (randomInt == 0)
             return new Troll(playerLevel);
-        else if (randomInt == 3)
+        else if (randomInt == 1)
+            return new Goblin(playerLevel);
+        else if (randomInt == 2)
             return new BossRat(playerLevel);
         else
-            return new Goblin(playerLevel);
+            return new Skeleton(playerLevel);
     }
 
     private Monster getPlainsMonster(int playerLevel) {
