@@ -70,6 +70,7 @@ public class MonsterFactoryTest {
         Monster caveMonster = factory.generateMonster(player);
         assertTrue(caveMonster instanceof Troll ||
                 caveMonster instanceof Skeleton ||
+                caveMonster instanceof BossRat ||
                 caveMonster instanceof Goblin);
     }
 
